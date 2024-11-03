@@ -12,19 +12,19 @@ const mockTodo=[
     id: 0,
     isDone: false,
     content: 'Faire les courses',
-    createDate: new Date().getTime()
+    createDate: Date.now()
   },
   {
     id:1,
     isDone: false,
     content: 'Revise PHP',
-    createDate: new Date().getTime()
+    createDate: Date.now()
   },
   {
     id:2,
     isDone: false,
     content: 'Chercher un colis',
-    createDate: new Date().getTime()
+    createDate: Date.now()
   }
 ];
 
@@ -47,11 +47,30 @@ function App() {
     idRef.current +=1;
   }
 
+  // Add Update function
+
+  const onUpdate = (targetID) => {
+    setTodo(
+      todo.map(
+        (it) => {
+          if (it.id === targetID){
+            return {
+              ...it,
+              isDone: !it.isDone,
+            };
+          }else{
+            return it;
+          }
+        }
+      )
+    );
+  };
+
   return (
     <div className="App">
       <Header />
       <TodoEditor onCreate={onCreate}/>
-      <TodoList todo={todo} />
+      <TodoList todo={todo} onUpdate={onUpdate} />
     </div>
   );
 }
