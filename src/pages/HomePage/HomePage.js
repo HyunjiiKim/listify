@@ -1,7 +1,3 @@
-import {useNavigate} from 'react-router-dom';
+import React from "react";
+import RedirectionSignIn from "../../components/RedirectionSignIn";
 
-function RedirectionSignIn(){
-    return(
-
-    )
-}
