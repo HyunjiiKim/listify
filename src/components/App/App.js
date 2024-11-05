@@ -1,12 +1,35 @@
 //import React hooks
-import { useState, useRef } from 'react';
+//import { useState, useRef } from 'react';
 //import components and CSS file 
 import './App.css';
-import Header from './component/Header';
-import TodoEditor from './component/TodoEditor';
-import TodoList from './component/TodoList';
 
-const mockTodo=[
+import { BrowserRouter, Route,Routes } from 'react-router-dom';
+import HomePage from '../../pages/HomePage/HomePage';
+import MyPage from '../../pages/MyPage/MyPage';
+import SignUp from '../../pages/SignUp/SignUp';
+import ReinitializePassword from '../../pages/ReinitializePassword/ReinitializePassword';
+
+
+const App = () =>{
+  return(
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<HomePage />} />
+        <Route path="/mypage" element={<MyPage />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/reinitializepassword" element={<ReinitializePassword />} />
+      </Routes>
+    </BrowserRouter>
+  )
+}
+
+export default App;
+
+/*import Header from './component/Header';
+import TodoEditor from './component/TodoEditor';
+import TodoList from './component/TodoList';*/
+
+/*const mockTodo=[
 
   {
     id: 0,
@@ -26,10 +49,10 @@ const mockTodo=[
     content: 'Chercher un colis',
     createDate: Date.now()
   }
-];
+];*/
 
 
-function App() {
+/*function App() {
   //Initialize todo 
 
   const idRef = useRef(3);
@@ -74,5 +97,4 @@ function App() {
     </div>
   );
 }
-
-export default App;
+*/

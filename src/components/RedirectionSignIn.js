@@ -1,10 +1,10 @@
-import {useNavigate} from 'react-router-dom';
+/*import { useNavigate } from "react-router-dom";
 
 function RedirectionSignIn(){
 
     const navigate = useNavigate;
     //Redirection based on loggedin status
-    const isLoggedIn = True;
+    const isLoggedIn = true;
 
     if(isLoggedIn){
         navigate('../pages/HomePage/HomePage.js');
@@ -13,4 +13,4 @@ function RedirectionSignIn(){
     }
 };
 
-export default RedirectionSignIn;
+export default RedirectionSignIn;*/
