@@ -1,10 +1,13 @@
 import React from "react";
+import { useState } from "react";
 import 'SignIn.css';
 
+//import components
 import Header from '../../components/Header/Header'
 import InputText from "../../components/Input/Input";
+import Button from "../../components/Button/Button";
 
-const SignInPage = () =>{
+const SignInPage = (e.target.Button) =>{
     return(
         <React.Fragment>
             < Header/>
@@ -17,6 +20,11 @@ const SignInPage = () =>{
                 inputType='password'
                 icon='Lock'
                 Placeholder='Password'
+            />
+            <Button
+                intent: 'buttonPrimary'
+                size: 'buttonLarge'
+                input: 'Sign In'
             />
         </React.Fragment>
     );
