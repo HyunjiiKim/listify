@@ -1,0 +1,44 @@
+.base-button{
+    width: 192px;
+    height: 53px;
+    padding: 44px 15px;
+    border: none;
+    border-radius: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #FFFCFC;
+}
+
+**variant intent**
+
+.ButtonPrimary{
+    background-color: #0075CF;
+}
+
+.ButtonHover{
+    background-color: #04538F;
+}
+
+.ButtonIactive{
+    background-color: #D1D1D1;
+}
+
+.ButtonDanger{
+    background-color: #C20000;
+}
+
+**variant size**
+
+.ButtonSmall{
+    width: 109px;
+    height: 53px;
+    padding: 31px 19px;
+    font-size:16pt;
+}
+
+.ButtonLarge{
+    width: 323px;
+    height: 88px;
+    padding: 121px 88px;
+    font-size: 24pt;
+}
