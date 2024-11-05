@@ -15,7 +15,7 @@
     background-color: #0075CF;
 }
 
-.ButtonHover{
+.base-button:hover{
     background-color: #04538F;
 }
 
