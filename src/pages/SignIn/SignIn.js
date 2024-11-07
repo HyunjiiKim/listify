@@ -4,7 +4,7 @@ import './SignIn.css';
 
 //import components
 import Header from '../../components/Header/Header'
-import InputText from "../../components/Input/Input";
+import {InputText} from "../../components/Input/Input";
 import Button from "../../components/Button/Button";
 
 const SignInPage = () => {
@@ -25,7 +25,7 @@ const SignInPage = () => {
             </div>
             <Button
                 intent='primary'
-                size='large'
+                size='small'
                 label='Sign In'
             />
         </React.Fragment>
