@@ -4,7 +4,10 @@
 import './App.css';
 
 import { BrowserRouter, Route,Routes } from 'react-router-dom';
+
+// import pages
 import HomePage from '../../pages/HomePage/HomePage';
+import SignIn from '../../pages/SignIn/SignIn';
 import MyPage from '../../pages/MyPage/MyPage';
 import SignUp from '../../pages/SignUp/SignUp';
 import ReinitializePassword from '../../pages/ReinitializePassword/ReinitializePassword';
@@ -15,12 +18,13 @@ const App = () =>{
     <BrowserRouter>
       <Routes>
         <Route index element={<HomePage />} />
+        <Route path='/signin' element={<SignIn />} />
         <Route path="/mypage" element={<MyPage />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/reinitializepassword" element={<ReinitializePassword />} />
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
 export default App;

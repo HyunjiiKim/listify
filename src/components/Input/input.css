@@ -1,0 +1,25 @@
+.inputField{
+    display: flex;
+    align-items: center;
+}
+
+.inputText{
+    width: '323px';
+    height: '60px';
+    border-radius: '12px';
+    background-color: 'rgba(240,240,240,0.8)';
+    color: '#0B0A0A';
+    font-size:'16pt';
+}
+
+.icon{
+    padding-right: 21px;
+}
+
+.icon-mail{
+    background-image: url('../../icons/Mail.png');
+}
+
+.icon-lock{
+    background-image: url('../../icons/Lock.png');
+}

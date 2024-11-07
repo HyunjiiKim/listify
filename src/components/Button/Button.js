@@ -2,7 +2,7 @@ import React from "react";
 import { cva } from "class-variance-authority";
 import './Button.css';
 
-const ButtonStyles=(cva,'base-button'{
+const ButtonStyles=cva('base-button',{
     variants: {
         intent:{
             primary: 'buttonPrimary',
@@ -22,9 +22,12 @@ const ButtonStyles=(cva,'base-button'{
 });
 
 const Button = ({intent, size, label}) => {
-
+    const buttonClass= ButtonStyles({intent,size});
     return(
-        <button className={ButtonStyles({intent,size})}>
+        <button
+        className={buttonClass}
+        type='submit'
+        >
             {label}
         </button>
     );

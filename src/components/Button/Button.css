@@ -36,6 +36,13 @@
     font-size:16pt;
 }
 
+.ButtonMedium{
+    width: 192px;
+    height: 53px;
+    padding: 44px 15px;
+    font-size: 20pt;
+}
+
 .ButtonLarge{
     width: 323px;
     height: 88px;
