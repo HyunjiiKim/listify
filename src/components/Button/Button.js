@@ -6,8 +6,8 @@ const ButtonStyles=(cva,'base-button'{
     variants: {
         intent:{
             primary: 'buttonPrimary',
-            inactive: 'buttonInactive'
-            danger: 'buttonDanger'
+            inactive: 'buttonInactive',
+            danger: 'buttonDanger',
         },
         size:{
             small:  'buttonSmall',
@@ -16,17 +16,16 @@ const ButtonStyles=(cva,'base-button'{
         },
     },
     defaultVariants:{
-        intent:"buttonPrimary",
-        size: "buttonMedium",
+        intent:"primary",
+        size: "medium",
     },
-}
-);
+});
 
-const Button = ({intent, size, input}) => {
+const Button = ({intent, size, label}) => {
 
     return(
         <button className={ButtonStyles({intent,size})}>
-            {input}
+            {label}
         </button>
     );
 };
