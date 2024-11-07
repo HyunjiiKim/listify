@@ -14,4 +14,29 @@ const InputText = ({inputType,placeholder,icon}) => {
     );
 };
 
-export default InputText;
+
+const InputRadio = ({label}) => {
+    return(
+        <div className='InputField'>
+            <input type='checkbox'
+            className='inputRadio'
+            />
+            <p>{label}</p>
+        </div>
+    );
+};
+
+const InputTextLabel = ({label, inputType, placeholder}) => {
+    return(
+        <div>
+            <label htmlFor={label}>{label}</label>
+            <input
+            type={inputType}
+            placeholder={placeholder}
+            name={label}
+            />
+        </div>
+    )
+};
+
+export { InputText, InputRadio, InputTextLabel };
