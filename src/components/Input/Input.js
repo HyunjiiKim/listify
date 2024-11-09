@@ -1,5 +1,5 @@
 import React from 'react';
-import './input.css';
+import './Input.css';
 
 const InputText = ({inputType,placeholder,icon}) => {
 

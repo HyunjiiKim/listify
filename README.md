@@ -27,12 +27,12 @@ To get a local copy up and running, follow these simple steps:
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/hyunjiikim/to_do_list.git
+   git clone https://github.com/hyunjiikim/listify.git
    ```
    
 2. Navigate to the project directory:
    ```bash
-   cd to_do_list
+   cd listify
    ```
 
 3. Install the dependencies:
@@ -42,7 +42,7 @@ To get a local copy up and running, follow these simple steps:
 
 4. Start the application
    ```bash
-   npm start
+   npm run dev
    ```
 
 ## Usage
@@ -57,4 +57,3 @@ This project is licensed under the MIT License
 ## Acknowledgments
 
 Thanks to [Winterlood](https://github.com/winterlood) for his insightful book, which I read attentively. I also want to acknowledge the React community for the fantastic resources that helped me learn and build this project!
-
