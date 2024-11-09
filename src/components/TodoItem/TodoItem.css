@@ -1,0 +1,60 @@
+.checkbox{
+    width: 25px;
+    height: 25px;
+    border: solid #0B0A0A 1px;
+    border-radius: 8px;
+}
+
+
+.Tag{
+    width: auto;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    height: 28px;
+    padding: 6px 20px;
+    background-color: rgba(240,240,240,0.8);
+    color: #0B0A0A;
+    border-radius: 8px;
+}
+
+
+/*TodoItem.jsx*/
+
+.todoItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    block-size: fit-content;
+}
+
+.right{
+    display: flex;
+    width: 412px;
+    justify-content: space-between;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.ttlSubTtl{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.tagField{
+    display: flex;
+    gap: 1em;
+    align-items: flex-end;
+}

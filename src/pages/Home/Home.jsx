@@ -1,9 +1,13 @@
 import React from "react";
 
+import Header from "../../components/Header/Header";
+import TodoItem from "../../components/TodoItem/TodoItem";
+
 const Home = () =>{
     return(
         <React.Fragment>
-        <h1>Home</h1>
+            <Header />
+            <TodoItem />
         </React.Fragment>
     )
     
