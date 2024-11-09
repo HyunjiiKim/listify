@@ -8,6 +8,8 @@ const ButtonStyles=cva('base-button',{
             primary: 'buttonPrimary',
             inactive: 'buttonInactive',
             danger: 'buttonDanger',
+            outlineP: 'buttonOutlineP',
+            outlineS: 'buttonOutlineS',
         },
         size:{
             small:  'buttonSmall',

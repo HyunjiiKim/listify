@@ -11,7 +11,7 @@
 
 **variant intent**
 
-.ButtonPrimary{
+.buttonPrimary{
     background-color: #0075CF;
 }
 
@@ -19,33 +19,45 @@
     background-color: #04538F;
 }
 
-.ButtonIactive{
+.buttonIactive{
     background-color: #D1D1D1;
 }
 
-.ButtonDanger{
+.buttonDanger{
     background-color: #C20000;
+}
+
+.buttonOutlineP{
+    background-color: #FFFCFC;
+    border-color: #0075CF;
+    color:#0075CF;
+}
+
+.buttonOutlineS{
+    background-color: #FFFCFC;
+    border-color: #04538F;
+    color:#04538F;
 }
 
 **variant size**
 
-.ButtonSmall{
-    width: 109px;
-    height: 53px;
-    padding: 31px 19px;
-    font-size:16pt;
+.buttonSmall{
+    width: 79px;
+    height: 40px;
+    padding: 24px 16px;
+    font-size: 14pt;
 }
 
-.ButtonMedium{
-    width: 192px;
+.buttonMedium{
+    width: 196px;
     height: 53px;
-    padding: 44px 15px;
+    padding: 46px 16px;
     font-size: 20pt;
 }
 
-.ButtonLarge{
-    width: 323px;
-    height: 88px;
-    padding: 121px 88px;
+.buttonLarge{
+    width: 327px;
+    height: 60px;
+    padding: 101px 16px;
     font-size: 24pt;
 }
