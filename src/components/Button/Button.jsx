@@ -25,6 +25,10 @@ const ButtonStyles=cva('base-button',{
 
 const Button = ({intent, size, label}) => {
     const buttonClass= ButtonStyles({intent,size});
+    const handleOnChange = (e) =>{
+        
+    }
+
     return(
         <button
         className={buttonClass}

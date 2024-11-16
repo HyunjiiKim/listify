@@ -1,4 +1,6 @@
 import React from 'react';
+import { useState } from 'react';
+
 import './Input.css';
 
 const InputText = ({inputType,placeholder,icon}) => {
@@ -39,4 +41,19 @@ const InputTextLabel = ({label, inputType, placeholder}) => {
     )
 };
 
-export { InputText, InputRadio, InputTextLabel };
+const InputDate = () =>{
+    
+    const [date, setDate]= useState('');
+    const handleOnchange = (e) =>{
+        console.log("updated data:",e.target.value);
+        setDate(e.target.value);
+    };
+ 
+    return(
+        <div>
+            <input type='date' value={date} onChange={handleOnchange} />
+        </div>
+    );
+}
+
+export { InputText, InputRadio, InputTextLabel, InputDate };

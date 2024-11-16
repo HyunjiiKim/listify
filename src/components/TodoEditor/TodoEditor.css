@@ -1,0 +1,12 @@
+.TodoEditor{
+    display:flex;
+    width: 600px;
+}
+
+.TodoEditor input{
+    margin-right: 20px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: transparent;
+    font-size: 16px;
+}

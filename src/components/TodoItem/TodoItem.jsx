@@ -8,6 +8,9 @@ import './TodoItem.css';
 
 const TodoItem = () =>{
 
+    const CreatedOn = 'Created on';
+    const CompletedOn = 'Completed on';
+
     return(
         <div className='todoItem'>
             <div className='left'>
@@ -16,7 +19,7 @@ const TodoItem = () =>{
                     <h4>Task 1</h4>
                 </div>
                 <div>
-                <p>Created on 23th June 2022</p>
+                <p>{CreatedOn}</p>
                 </div>
                 <div className="tagField">
                     <Tag
@@ -33,7 +36,7 @@ const TodoItem = () =>{
                 <Button
                 intent={'primary'}
                 size={'medium'}
-                label='Remove' />
+                label='Delete' />
             </div>
         </div> 
     )
