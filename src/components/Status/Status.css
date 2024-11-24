@@ -1,0 +1,8 @@
+.tagline{
+    font-size: 36pt;
+    font-weight: bold;
+}
+
+.i-arrow-right{
+    background-image: url('src/Image/arrow-right.png');
+}

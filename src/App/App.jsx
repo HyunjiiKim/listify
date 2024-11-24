@@ -15,22 +15,11 @@ const App = () =>{
   return(
     <BrowserRouter>
       <Routes>
-        <Route index element={<Home />} />
-        <Route path="signin">
-          <Route path='*' element={<SignIn />}/>
-        </Route>
-        <Route path="myAccount">
-          <Route path='*' element={<MyAccount />}/>
-        </Route>
-        <Route path="register">
-          <Route path='*' element={<SignIn />}/>
-        </Route>
-        <Route path="register">
-          <Route path='*' element={<Register />}/>
-        </Route>
-        <Route path="reinitializepassword">
-          <Route path='*' element={<ReinitializePassword />}/>
-        </Route>
+      <Route path="/" element={<Home />} />
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/myaccount" element={<MyAccount />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/reinitializepassword" element={<ReinitializePassword />} />
       </Routes>
     </BrowserRouter>
   );

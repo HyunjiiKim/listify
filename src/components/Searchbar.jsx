@@ -1,11 +1,11 @@
 import React from "react";
 import '../index.css';
-import Magnify from '../Image/Magnify.png';
+import * as Icon from 'react-bootstrap-icons';
 
 const Searchbar = () => {
     return(
         <div className="Search">
-            <img src={Magnify} alt='Magnify'/>
+            <Icon.Search size='1rem;'/>
             <input type='text'/>
         </div>
     )
