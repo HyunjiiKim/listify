@@ -23,7 +23,7 @@ const ButtonStyles=cva('base-button',{
     },
 });
 
-const Button = ({intent, size, label}) => {
+const Button = ({intent, size, label, onClick}) => {
     const buttonClass= ButtonStyles({intent,size});
     const handleOnChange = (e) =>{
         
@@ -33,6 +33,7 @@ const Button = ({intent, size, label}) => {
         <button
         className={buttonClass}
         type='submit'
+        onClick={onClick}
         >
             {label}
         </button>
