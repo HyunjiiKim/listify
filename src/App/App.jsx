@@ -1,7 +1,7 @@
 //import components and CSS file 
 import './App.css';
 
-import { BrowserRouter, Route,Routes } from 'react-router-dom';
+import { BrowserRouter, Route,Routes, Link } from 'react-router-dom';
 
 // import pages
 import Home from '../pages/Home/Home.jsx';
@@ -14,6 +14,12 @@ import ReinitializePassword from '../pages/ReinitializePassword/ReinitializePass
 const App = () =>{
   return(
     <BrowserRouter>
+    <div className='menu'>
+      <Link to='/'>Home</Link>
+      <Link to='/signin'>Sign In</Link>
+      <Link to='/myaccount'>My Account</Link>
+      <Link to='/register'>Sign Up</Link>
+    </div>
       <Routes>
       <Route path="/" element={<Home />} />
         <Route path="/signin" element={<SignIn />} />
