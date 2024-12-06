@@ -3,9 +3,7 @@ import { useState } from "react";
 
 import './TodoItem.css';
 
-const Checkbox = () =>{
-    
-    const [isChecked,setIsChecked] = useState(false)
+const Checkbox = ({isChecked}) =>{
 
     return(
         <input type="checkbox" className="checkbox" checked={isChecked}/>
