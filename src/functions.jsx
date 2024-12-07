@@ -1,7 +1,16 @@
 function reducer(state, action){
     switch(action.type){
-        case 'create':
-            return [action.data, ...state];
+        case 'create':{
+            return [action.NewItem, ...state];
+        }
+        case 'update':{
+            return state.map((it)=>
+            it.id === action.targetId);
+        }
+        case 'delete':{
+            return state.filter((it)=>
+            it.id !== action.targetId);
+        }
         default:{
             return state;
         }
