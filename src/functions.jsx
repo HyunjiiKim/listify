@@ -10,4 +10,14 @@ function reducer(state, action){
 
 };
 
-export {reducer};
+function changeDateFormat(Frenchdate){
+    if(!(Frenchdate instanceof Date)){
+        Frenchdate = new Date(Frenchdate);
+    }
+    let year = Frenchdate.getFullYear();
+    let month = String(Frenchdate.getMonth()+1).padStart(2,'0');
+    let date = String(Frenchdate.getDate()).padStart(2,'0');
+    return `${year}-${month}-${date}`;
+}    
+
+export {reducer, changeDateFormat};
