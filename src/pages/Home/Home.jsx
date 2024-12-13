@@ -12,7 +12,7 @@ import { reducer } from "../../functions";
 const Home = () => {
 
    const [data, dispatch] = useReducer(reducer,[]);
-   const idRef = useRef(0);
+   let idRef = useRef(0);
 
    const onCreate = (title, createdDate, tag, completedDate, description) => {
     dispatch({
